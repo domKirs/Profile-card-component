@@ -33,17 +33,22 @@ body {
 main {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $background-color;
   background-repeat: no-repeat;
   background-image: url($bg-pattern-top),
                     url($bg-pattern-bottom);
+  background-size: 480px;
   background-position: top -236px left -288px, 
                        bottom -220px right -260px;
-                       
-  background-size: 480px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @media (min-width: 580px) {
+    background-size: 640px;
+    background-position: top -320px left -260px, 
+                         bottom -280px right -200px;
+  }
 }
 
 article {

@@ -17,11 +17,6 @@ body {
 main {
   height: 100vh;
   width: 100%;
-  background-color: #19a2ae;
-  background-repeat: no-repeat;
-  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-  background-position: top -236px left -288px,  bottom -220px right -260px;
-  background-size: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +26,18 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #19a2ae;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-size: 480px;
+  background-position: top -236px left -288px,  bottom -220px right -260px;
+}
+
+@media (min-width: 580px) {
+  main {
+    background-size: 640px;
+    background-position: top -320px left -260px,  bottom -280px right -200px;
+  }
 }
 
 article {
