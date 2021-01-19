@@ -1,1 +1,138 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #2d3248;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: #19a2ae;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: top -138px left -120px,  bottom -140px right -140px;
+  background-size: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article {
+  background-color: whitesmoke;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 340px;
+}
+
+article > header {
+  height: 8rem;
+  position: relative;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+article > header > img {
+  height: 6rem;
+  position: absolute;
+  left: calc(50% - 3rem);
+  bottom: -34%;
+  display: block;
+  border: 4px solid whitesmoke;
+  border-radius: 50%;
+}
+
+article > section:first-of-type {
+  height: 8rem;
+  padding-top: 3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+article > section:first-of-type > p {
+  margin-bottom: 0.5rem;
+}
+
+article > section:first-of-type > p > strong {
+  font-weight: 700;
+}
+
+article > section:first-of-type > p > span {
+  font-weight: 400;
+  color: #969696;
+}
+
+article > section:first-of-type > p:last-of-type {
+  font-size: 14px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  color: #969696;
+}
+
+article > section:last-of-type {
+  height: 5rem;
+  border-top: 1px solid #969696;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article > section:last-of-type > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article > section:last-of-type > div > span:first-of-type {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+article > section:last-of-type > div > span:last-of-type {
+  font-weight: 100;
+  font-size: 12px;
+  color: #969696;
+}
+/*# sourceMappingURL=main.css.map */
